@@ -11,7 +11,6 @@ public class SetNavigationTarget : MonoBehaviour
     private GameObject navTargetObject;
     private NavMeshPath path;
     private LineRenderer line;
-    private bool lineToggle = false;
     // Start is called before the first frame update
     private void Start()
     {
