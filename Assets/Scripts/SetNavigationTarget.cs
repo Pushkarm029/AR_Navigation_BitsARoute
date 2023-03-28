@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class SetNavigationTarget : MonoBehaviour
 {
     [SerializeField]
-    private Camera topDownCamera;
+    private Dropdown navigationTargetDropDown;
     [SerializeField]
-    private GameObject navTargetObject;
+    private List<Target> navigationTargetObjects = new List<Target>();
     private NavMeshPath path;
     private LineRenderer line;
+    private Vector3 targetPosition = Vector3.zero;
     // Start is called before the first frame update
     private void Start()
     {
@@ -18,10 +20,17 @@ public class SetNavigationTarget : MonoBehaviour
         line = transform.GetComponent<LineRenderer>();
     }
     private void Update(){
-        NavMesh.CalculatePath(transform.position, navTargetObject.transform.position, NavMesh.AllAreas, path);
+        NavMesh.CalculatePath(transform.position, targetPosition, NavMesh.AllAreas, path);
         line.positionCount = path.corners.Length;
         line.SetPositions(path.corners);
-        line.enabled = true;
+    }
+    public void SetCurrentNavigationTarget(int selectedValue){
+        targetPosition = Vector3.zero;
+        string selectedText = navigationTargetDropDown.options[selectedValue].text;
+        Target currentTarget = navigationTargetObjects.Find(x => x.Name.Equals(selectedText));
+        if(currentTarget != null ){
+            targetPosition = currentTarget.PositionObject.transform.position;
+        }
     }
 
 }
