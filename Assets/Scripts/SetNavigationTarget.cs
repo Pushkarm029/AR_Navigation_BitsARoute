@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -6,6 +5,7 @@ using UnityEngine.UI;
 
 public class SetNavigationTarget : MonoBehaviour
 {
+    int a=11;
     [SerializeField]
     private Dropdown navigationTargetDropDown;
     [SerializeField]
@@ -20,16 +20,23 @@ public class SetNavigationTarget : MonoBehaviour
         line = transform.GetComponent<LineRenderer>();
     }
     private void Update(){
-        NavMesh.CalculatePath(transform.position, targetPosition, NavMesh.AllAreas, path);
-        line.positionCount = path.corners.Length;
-        line.SetPositions(path.corners);
+        if(targetPosition!= Vector3.zero){
+            NavMesh.CalculatePath(transform.position, targetPosition, NavMesh.AllAreas, path);
+            line.positionCount = path.corners.Length;
+            line.SetPositions(path.corners);
+        }
+        if(a!=11)
+        {SetCurrentNavigationTarget(a);}
     }
     public void SetCurrentNavigationTarget(int selectedValue){
+        a=selectedValue;
         targetPosition = Vector3.zero;
         string selectedText = navigationTargetDropDown.options[selectedValue].text;
         Target currentTarget = navigationTargetObjects.Find(x => x.Name.Equals(selectedText));
-        if(currentTarget != null ){
-            targetPosition = currentTarget.PositionObject.transform.position;
+
+        if(currentTarget != null )
+        {
+            targetPosition = currentTarget.PositionObject.transform.localPosition;
         }
     }
 

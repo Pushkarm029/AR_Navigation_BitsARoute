@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Krishna
+    - m_Text: Rotunda
       m_Image: {fileID: 0}
     - m_Text: Gandhi
       m_Image: {fileID: 0}
@@ -232,7 +232,7 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Temple
       m_Image: {fileID: 0}
-    - m_Text: Rotunda
+    - m_Text: Krishna
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2051,8 +2051,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navigationTargetDropDown: {fileID: 73132736}
   navigationTargetObjects:
-  - Name: Krishna
-    PositionObject: {fileID: 1380789197}
+  - Name: Rotunda
+    PositionObject: {fileID: 1794880255}
   - Name: Gandhi
     PositionObject: {fileID: 922848324}
   - Name: VKLawns
@@ -2069,8 +2069,8 @@ MonoBehaviour:
     PositionObject: {fileID: 679100239}
   - Name: Temple
     PositionObject: {fileID: 1136488810}
-  - Name: Rotunda
-    PositionObject: {fileID: 1794880255}
+  - Name: Krishna
+    PositionObject: {fileID: 1380789197}
 --- !u!114 &934383189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2091,8 +2091,8 @@ MonoBehaviour:
   statusTxt: {fileID: 490594169}
   multy: -27500
   multx: 7000
-  latitude: 28.36042
-  longitude: 75.58688
+  latitude: 28.360497
+  longitude: 75.58831
 --- !u!1 &1055294276
 GameObject:
   m_ObjectHideFlags: 0
@@ -3099,7 +3099,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Krishna
+  m_Text: Rotunda
 --- !u!222 &1695240426
 CanvasRenderer:
   m_ObjectHideFlags: 0
