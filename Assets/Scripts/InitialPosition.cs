@@ -13,9 +13,6 @@ public class InitialPosition : MonoBehaviour
     private float finallat;
     private float finallong;
     [SerializeField] private float midrotfd;
-    public Text lat;
-    public Text long1;
-    public Text statusTxt;
     private float anx;
     private float any;
     public float multy = -27500;
@@ -48,12 +45,10 @@ public class InitialPosition : MonoBehaviour
     {
         if (!Input.location.isEnabledByUser)
         {
-            statusTxt.text = "No Permission";
             Permission.RequestUserPermission(Permission.FineLocation);
         }
         else
         {
-            statusTxt.text = "Permission Granted";
             StartCoroutine(GetLatLonUsingGPS());
         }
     }
@@ -67,14 +62,10 @@ public class InitialPosition : MonoBehaviour
             yield return new WaitForSeconds(1);
             maxWait--;
         }
- 
-        statusTxt.text = "waiting before getting lat and lon";
      
         // Access granted and location value could be retrieve
         longitude = Input.location.lastData.longitude;
         latitude = Input.location.lastData.latitude;
-     
-        statusTxt.text = "" + Input.location.status + "  lat:" + latitude + "  long:" + longitude;
     }
     private void Update()
     {   
@@ -98,7 +89,5 @@ public class InitialPosition : MonoBehaviour
         // Calculate the new position of the game object based on GPS coordinates
         Vector3 newPosition = new Vector3(anx, initialPosition.y, any);
         transform.position = newPosition;
-        lat.text=(finallat).ToString();
-        long1.text=(finallong).ToString();
     }
 }
