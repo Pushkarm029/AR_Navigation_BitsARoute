@@ -2497,7 +2497,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 191
+    m_Bits: 2147483647
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: fb7408f2350630847ae936f6a37e2a3b, type: 2}
   m_TargetDisplay: 0
@@ -3078,9 +3078,6 @@ MonoBehaviour:
   inilat: 28.35824
   inilong: 75.58766
   midrotfd: 75.58743
-  lat: {fileID: 0}
-  long1: {fileID: 0}
-  statusTxt: {fileID: 0}
   multy: -27500
   multx: 7000
   latitude: 28.35824
