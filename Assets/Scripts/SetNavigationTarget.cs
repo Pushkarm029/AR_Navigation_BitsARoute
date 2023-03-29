@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class SetNavigationTarget : MonoBehaviour
 {
-    int a=11;
     [SerializeField]
     private Dropdown navigationTargetDropDown;
     [SerializeField]
@@ -25,11 +24,8 @@ public class SetNavigationTarget : MonoBehaviour
             line.positionCount = path.corners.Length;
             line.SetPositions(path.corners);
         }
-        if(a!=11)
-        {SetCurrentNavigationTarget(a);}
     }
     public void SetCurrentNavigationTarget(int selectedValue){
-        a=selectedValue;
         targetPosition = Vector3.zero;
         string selectedText = navigationTargetDropDown.options[selectedValue].text;
         Target currentTarget = navigationTargetObjects.Find(x => x.Name.Equals(selectedText));
