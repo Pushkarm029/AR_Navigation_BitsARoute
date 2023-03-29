@@ -18,8 +18,8 @@ public class InitialPosition : MonoBehaviour
     public Text statusTxt;
     private float anx;
     private float any;
-    public float multy = 27500;
-    public float multx = -7000;
+    public float multy = -27500;
+    public float multx = 7000;
     private float multxt =0;
 
     public static InitialPosition Instance { set; get; }
@@ -35,6 +35,7 @@ public class InitialPosition : MonoBehaviour
             multxt = 7*multx;
         }
         else if(inilong < finallong && inilat < finallat){
+            multx = 6000;
             multxt = -multx*4;
         }
         else if(inilong > finallong && inilat < finallat){
@@ -84,6 +85,7 @@ public class InitialPosition : MonoBehaviour
             multxt = 7*multx;
         }
         else if(inilong < finallong && inilat < finallat){
+            multx = 6000;
             multxt = -multx*4;
         }
         else if(inilong > finallong && inilat < finallat){
