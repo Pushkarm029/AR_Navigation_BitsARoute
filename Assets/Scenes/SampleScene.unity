@@ -1656,7 +1656,7 @@ GameObject:
   - component: {fileID: 439197436}
   - component: {fileID: 439197435}
   - component: {fileID: 439197434}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: IndicatorSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4496,7 +4496,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 934383185}
-  - component: {fileID: 934383187}
   - component: {fileID: 934383186}
   - component: {fileID: 934383188}
   - component: {fileID: 934383189}
@@ -4625,25 +4624,6 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!1818360608 &934383187
-PositionConstraint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 934383184}
-  m_Enabled: 0
-  m_Weight: 1
-  m_TranslationAtRest: {x: 0, y: 0, z: 0}
-  m_TranslationOffset: {x: 0, y: -1, z: 0}
-  m_AffectTranslationX: 1
-  m_AffectTranslationY: 0
-  m_AffectTranslationZ: 1
-  m_IsContraintActive: 1
-  m_IsLocked: 0
-  m_Sources:
-  - sourceTransform: {fileID: 1185630030}
-    weight: 1
 --- !u!114 &934383188
 MonoBehaviour:
   m_ObjectHideFlags: 0
