@@ -86,7 +86,6 @@ public class InitialPosition : MonoBehaviour
         }
         anx = -multxt*(finallong-inilong);
         any = -multy*(finallat-inilat);
-        // Calculate the new position of the game object based on GPS coordinates
         Vector3 newPosition = new Vector3(anx, initialPosition.y, any);
         transform.position = newPosition;
     }
