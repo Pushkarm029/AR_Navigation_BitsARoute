@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4440221, g: 0.49316514, b: 0.5722316, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -707,6 +707,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1068562575785398660, guid: d6009f1e015637c4f82fb702841d8640, type: 3}
+      propertyPath: orthographic size
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1068562575785398660, guid: d6009f1e015637c4f82fb702841d8640, type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1068562575785398660, guid: d6009f1e015637c4f82fb702841d8640, type: 3}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1068562575908810649, guid: d6009f1e015637c4f82fb702841d8640, type: 3}
       propertyPath: navigationTargetDropDown
       value: 
@@ -869,10 +881,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6534934666374605420, guid: ea088db87c15ff748b4a25f0da116e53, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534934666374605420, guid: ea088db87c15ff748b4a25f0da116e53, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534934666374605420, guid: ea088db87c15ff748b4a25f0da116e53, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534934666374605420, guid: ea088db87c15ff748b4a25f0da116e53, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534934666374605420, guid: ea088db87c15ff748b4a25f0da116e53, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534934666374605420, guid: ea088db87c15ff748b4a25f0da116e53, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534934666374605420, guid: ea088db87c15ff748b4a25f0da116e53, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -540
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534934666374605420, guid: ea088db87c15ff748b4a25f0da116e53, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534934667561358762, guid: ea088db87c15ff748b4a25f0da116e53, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6534934667561358763, guid: ea088db87c15ff748b4a25f0da116e53, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 934383188}
+    - target: {fileID: 6534934667561358804, guid: ea088db87c15ff748b4a25f0da116e53, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -582
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534934667561358804, guid: ea088db87c15ff748b4a25f0da116e53, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1275
+      objectReference: {fileID: 0}
     - target: {fileID: 6534934667893317121, guid: ea088db87c15ff748b4a25f0da116e53, type: 3}
       propertyPath: m_Name
       value: MiniMapCanvas
